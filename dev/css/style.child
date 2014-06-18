@@ -1,0 +1,12 @@
+/*
+Theme Name: slate-0.3.1_aerden-autobanden
+Theme URI: https://github.com/potato-student/slate_aerden
+Description: a clean slate - aerden-autobanden child theme
+Version: 0.3.1
+Author: Lars
+Author URI: http://www.lokaalgevonden.nl
+Tags: slate
+Template: slate-0.3.1
+*/
+
+@import url('../slate-0.3.1/style.css');
