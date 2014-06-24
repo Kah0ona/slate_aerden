@@ -1,9 +1,18 @@
 .Footer {
+	background-color: $c-darkgreen;
 }
 
 .Footer-inner {
 }
 
 .Footer-inner .widget {
-	@include span-columns(4);
+	@include span-columns(3);
+}
+
+h4.widgettitle{
+	font-size: 1rem;
+}
+
+.widgettext{
+	font-size: 14px;
 }

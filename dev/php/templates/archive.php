@@ -13,7 +13,7 @@
 				<?php _e( 'Archives', '' ); ?>
 			<?php endif; ?>
 			</h2>
-	
+	 
 		<?php while (have_posts()) : the_post(); ?>
 	
 			<article <?php post_class() ?>>

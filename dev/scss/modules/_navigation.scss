@@ -7,6 +7,8 @@
 
 .Navigation {
   text-align: center;
+
+
 }
 
 // -------------------------------------
@@ -24,7 +26,9 @@
 // -------------------------------------
 
 .Navigation-link.is-active {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: $c-red;
+  color: $c-white;
 }
 
 // -------------------------------------
@@ -41,7 +45,8 @@
 
 .Navigation-listItem {
   display: inline;
-  margin: 0 rem(15px);
+
+  // margin: 1em;
   &:first-of-type {
     margin-left: 0;
   }
@@ -54,9 +59,33 @@
 
 .Navigation-link {
   text-transform: uppercase;
+  text-decoration: none;
+  float: left;
+  margin-left: 3px;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: $c-darkgray;
+  background-color: $c-white;
+  margin-top: -1em;
+
+  cursor: pointer;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+
+  &:hover{
+   background: $c-red;
+   text-decoration: none;
+   color: $c-white;
+   }
 }
 
 .Navigation-link--invertedBold {
-  color: $c-white; 
   font-weight: bold;
+
+}
+
+#js-navCollapseTarget{
+  margin-top: 0;
 }
