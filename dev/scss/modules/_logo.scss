@@ -9,26 +9,23 @@
   display: inline-block;
 }
 
-// -------------------------------------
-// Modifiers
-// -------------------------------------
+.Logo-img{
+  // background-image: url("../img/logo-small.png");
+  // background: url("../img/logo-aerden.png");
+  background: url("../img/logo.png");
+  background-repeat: no-repeat;
+  height: 14.5em;
+  width: 100%;
 
-// -------------------------------------
-// States
-// -------------------------------------
+  @media screen and(max-width: 980px){
+  background: url("../img/logo-small.png");
+  background-repeat: no-repeat;
+  height: 4.5em;
+  width: 100%;
+  margin-left: 1em;
 
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
+  }
+}
 .Logo-textLink {
   vertical-align: top;
   padding-top: rem(16px);

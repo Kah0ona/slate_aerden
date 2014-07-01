@@ -1,0 +1,12 @@
+.Content-wrap{
+	background-color: $c-darkgreen;
+	// background: url("../img/tires.png");
+	background: url("../img/headerbg-alt.png");
+
+	background-repeat:repeat-x;
+	// background-attachment:fixed;
+	background-position:bottom; 
+		@media screen and(max-width: 980px){
+    @include span-columns(12);
+	}
+}

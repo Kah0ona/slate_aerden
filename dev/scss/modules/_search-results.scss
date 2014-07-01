@@ -1,0 +1,14 @@
+.Search-results > p{
+	text-align: center;
+}
+
+.Search-results{
+	   @include span-columns(12);
+    background-color: $c-red;
+    height: 650px; 
+    margin-top: 2em;
+	
+    @media screen and(max-width: 980px){
+    	@include span-columns(12);
+	}
+}

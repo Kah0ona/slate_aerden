@@ -1,0 +1,10 @@
+.Shoppingcart{
+	float: right;
+    @include span-columns(4);
+    background-color: $c-lightgreen;
+    height: 250px; 
+
+	@media screen and(max-width: 980px){
+	width: 100%;
+	}
+}

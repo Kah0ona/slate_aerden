@@ -1,0 +1,30 @@
+.Box-tires{
+    @include span-columns(6);
+    background-color: $c-red;
+    height: 450px; 
+    margin-top: 2em;
+	
+    @media screen and(max-width: 980px){
+    	@include span-columns(12);
+	}
+	
+}
+
+.Box-rims{
+    @include span-columns(6);
+    height: 450px; 
+    background-color: $c-red;
+    margin-top: 2em;
+
+    @media screen and(max-width: 980px){
+    	@include span-columns(12);
+	}
+}
+
+.Box-title{
+	text-align: center;  
+	font-weight: 600;
+	background-color: $c-lightgreen;
+	margin-top: 0;
+	padding: 0.8em;
+}

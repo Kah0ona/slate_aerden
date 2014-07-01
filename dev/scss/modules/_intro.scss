@@ -1,0 +1,18 @@
+.Intro{
+	background-color: $c-darkgreen;
+}
+
+.Intro-text{
+    @include span-columns(8);
+	background-color: $c-darkgreen;
+
+	@media screen and(max-width: 980px){
+    @include span-columns(12);
+    margin-left: 1em;
+
+    h2{
+    	font-size: 1em;
+    }
+  	}
+}
+

@@ -45,9 +45,7 @@
         <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.png" />-->
         <div class="u-gridContainer">
           <div class="Logo-img">
-        <!--<a href="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_zeisterstukadoors.svg" /></a>-->
-            <a href="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-aerden.png" /></a>
-        <!-- <img src="http://placehold.it/950x150/2079B0/2079B0"> -->
+            <!-- <a href="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-aerden.png" /></a> -->
             </div>
         </div>
     <!-- </div> -->

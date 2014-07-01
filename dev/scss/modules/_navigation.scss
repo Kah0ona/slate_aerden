@@ -6,7 +6,7 @@
 // *************************************
 
 .Navigation {
-  text-align: center;
+  // text-align: center;
 
 
 }
@@ -25,10 +25,11 @@
 // States
 // -------------------------------------
 
-.Navigation-link.is-active {
-  text-decoration: none;
+.Navigation-listItem.is-active {
   background-color: $c-red;
-  color: $c-white;
+  .Navigation-link{
+    color: $c-white;
+  }
 }
 
 // -------------------------------------
@@ -44,8 +45,19 @@
 // ----- List item ----- //
 
 .Navigation-listItem {
-  display: inline;
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  cursor: pointer;
 
+  background-color: $c-white;
+  -webkit-duration: .3s;
+  -moz-duration: .3s;
+  -o-duration: .3s;
+  transition-duration: .3s;
+  &:hover{
+   background: $c-red;
+   }
   // margin: 1em;
   &:first-of-type {
     margin-left: 0;
@@ -53,32 +65,32 @@
   &:last-of-type {
     margin-right: 0;
   }
+  
 }
 
 // ----- Navigation link ----- //
 
 .Navigation-link {
+  // padding-left: 1em;
+  // padding-right: 1em;
+  // padding-top: 1em;
+  font-size: 0.9em;
+  padding: 1em;
+  
   text-transform: uppercase;
   text-decoration: none;
-  float: left;
-  margin-left: 3px;
-  padding-left: 1em;
-  padding-right: 1em;
+  // margin-left: 4px;
   color: $c-darkgray;
-  background-color: $c-white;
-  margin-top: -1em;
 
-  cursor: pointer;
   -webkit-duration: .3s;
   -moz-duration: .3s;
   -o-duration: .3s;
   transition-duration: .3s;
-
   &:hover{
-   background: $c-red;
    text-decoration: none;
    color: $c-white;
    }
+  
 }
 
 .Navigation-link--invertedBold {

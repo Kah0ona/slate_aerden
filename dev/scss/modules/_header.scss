@@ -8,37 +8,29 @@
 .Header {
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
+  // @media screen and(max-width: 980px){
+  //   @include span-columns(12);
+  // }
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
+.Header-wrap{
+  background: url("../img/headerbg1.png");
+  background-repeat:repeat-x;
+  // background-attachment:fixed;
+  background-position:top; 
 
-// -variable
+}
 
-// -------------------------------------
-// Modifiers
-// -------------------------------------
-
-// .Module--modifierName
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Contact bar ----- //
+.Header-gradient{
+  background: $c-darkgreen; /* Old browsers */
+background: -moz-linear-gradient(top,  #001f20 0%, #003030 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#001f20), color-stop(100%,#003030)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #001f20 0%,#003030 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #001f20 0%,#003030 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #001f20 0%,#003030 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #001f20 0%,#003030 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f20', endColorstr='#003030',GradientType=0 ); /* IE6-9 */
+}
 
 .Header-contact {
   @extend .u-gridRow;
