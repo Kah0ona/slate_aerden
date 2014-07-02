@@ -66,6 +66,8 @@
 
 @import "modules/logo";
 
+@import "modules/nav-toggle";
+
 @import "modules/shoppingcart";
 
 @import "modules/search-results";
@@ -84,12 +86,6 @@
 	width: 100%;
 	height: 250px;
 }
-
-#js-navCollapse{
-	display: none;
-}
-
-
 
 
 .Green-text{

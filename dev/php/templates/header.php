@@ -53,11 +53,14 @@
 
 </div>
 <div class="Menu-wrap">
-    <div class="u-gridContainer">
-      <div class="u-gridRow">
-
-      <!-- Main navigation -->
-         <?php include 'includes/navigation.php'; ?>
+    <div class="u-gridContainer">   
+        <div class="u-gridRow">
+                <a class="Navigation-menuToggle" id="js-navCollapse">
+                    <svg class="Icon Icon--inline" viewBox="0 0 128 128">
+                        <use xlink:href="#icon-menu2"></use>
+                    </svg>
+                </a>
+             <?php include 'includes/navigation.php'; ?>
         </div>
     </div>
 </div>

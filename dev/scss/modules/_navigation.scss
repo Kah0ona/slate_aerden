@@ -7,7 +7,12 @@
 
 .Navigation {
   // text-align: center;
-
+@media screen and(max-width: 980px){
+    // margin-left: 6em;
+    background-color: transparent;
+    padding: 0;
+    // margin-left: 1.5em;
+  }
 
 }
 
@@ -29,6 +34,18 @@
   background-color: $c-red;
   .Navigation-link{
     color: $c-white;
+  }
+
+   @media screen and(max-width: 980px){
+    display: block;
+    padding: 0.5em;
+
+    &:hover{
+   background: transparent;
+    text-decoration: underline;
+
+   }
+    
   }
 }
 
@@ -65,6 +82,17 @@
   &:last-of-type {
     margin-right: 0;
   }
+  @media screen and(max-width: 980px){
+    display: block;
+    padding: 0.5em;
+
+    &:hover{
+   background: transparent;
+    text-decoration: underline;
+
+   }
+    
+  }
   
 }
 
@@ -90,6 +118,17 @@
    text-decoration: none;
    color: $c-white;
    }
+
+   @media screen and(max-width: 980px){
+    display: inline-block;
+    width: 100%;
+    // margin-top: 1em;
+    padding: 0;
+    padding-left: 1em;
+    padding-right: 2em;
+    color: $c-darkgreen;
+    text-align: center;
+  }
   
 }
 
@@ -100,4 +139,8 @@
 
 #js-navCollapseTarget{
   margin-top: 0;
+}
+
+.Nav-toggle{
+  background-color: blue;
 }

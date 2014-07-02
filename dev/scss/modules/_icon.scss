@@ -18,11 +18,14 @@
 // -------------------------------------
 
 .Icon--inline {
-  height: 1em;
-  width: 1em;
+  height: 3em;
+  width: 18em;
   vertical-align: middle;
   padding-bottom: 0.2em;
+  // fill: $c-white;
+  fill: $c-white;
 }
+
 
 .Icon--alone {}
 

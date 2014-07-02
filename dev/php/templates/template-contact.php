@@ -16,7 +16,7 @@ Template Name: Contactpage
 					<div class="u-gridRow">					
 						<div class="adress u-gridCol4">
 							<div class="adress-info">
-								<p>aerden-autobanden</p>
+								<p>Aerden Autobanden</p>
 								<p>Dorpsstraat 5</p>
 								<p>4635 BC Huijbergen</p>
 								<p>Email: info@aerdenautobanden.nl</p>
