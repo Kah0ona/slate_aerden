@@ -1,6 +1,6 @@
 .Box-tires{
     @include span-columns(6);
-    background-color: $c-red;
+    background-color: $c-darkgray;
     height: 450px; 
     margin-top: 2em;
 	
@@ -13,7 +13,7 @@
 .Box-rims{
     @include span-columns(6);
     height: 450px; 
-    background-color: $c-red;
+    background-color: $c-darkgray;
     margin-top: 2em;
 
     @media screen and(max-width: 980px){
