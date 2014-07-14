@@ -10,9 +10,10 @@
     @include span-columns(12);
     margin-left: 1em;
 
-    h2{
-    	font-size: 1em;
-    }
+        h2{
+        	font-size: 1em;
+            margin-top: -3em
+        }
   	}
 }
 

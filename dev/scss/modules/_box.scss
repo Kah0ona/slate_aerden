@@ -1,8 +1,12 @@
 .Box{
     @include span-columns(6);
+	background-image: url('../img/tire.png');
+	background-repeat: no-repeat;
     background-color: $c-darkgray;
-    //height: 350px; 
     margin-top: 2em;
+    height: 24em;
+    //height: 350px; 
+    // margin-top: 2em;
 
     @media screen and(max-width: 980px){
     	@include span-columns(12);
@@ -10,31 +14,122 @@
 	
 }
 
+.Box-wrap{
+	text-align: center;
+	margin-top:0;
+}
+
 .Box-content {
-	padding: 20px;
+	// padding: 20px;
 }
 .Box-rims {
+    border: 2px solid $c-white;
+    // margin-top: 0;
+    background: -moz-linear-gradient(top,  #001f20 0%, #003030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#001f20), color-stop(100%,#003030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #001f20 0%,#003030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #001f20 0%,#003030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #001f20 0%,#003030 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #001f20 0%,#003030 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f20', endColorstr='#003030',GradientType=0 ); /* IE6-9 */
+	background-image: url('../img/tire.png');
+	background-repeat: no-repeat;
 
+    @media screen and(max-width: 980px){
+    background-image: none;
+	}
 }
 
 .Box-tires {
+    border: 2px solid $c-white;
+    // background: $c-darkgreen; /* Old browsers */
+	background: -moz-linear-gradient(top,  #001f20 0%, #003030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#001f20), color-stop(100%,#003030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #001f20 0%,#003030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #001f20 0%,#003030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #001f20 0%,#003030 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #001f20 0%,#003030 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f20', endColorstr='#003030',GradientType=0 ); /* IE6-9 */
+	background-image: url('../img/tire.png');
+	background-repeat: no-repeat;
 
+	@media screen and(max-width: 980px){
+    background-image: none;
+	}
 }
 
 .Box-title{
 	text-align: center;  
 	font-weight: 600;
-	background-color: $c-lightgreen;
+	// background-color: $c-lightgreen;
 	margin-top: 0;
-	padding: 0.8em;
+   	background: rgba($c-lightgreen, 0.2);
+	// padding: 0.8em;
+	// margin-left: 10em;
+	// width: 100%;
+	@media screen and(max-width: 980px){
+		height: 2em;
+	}
 }
 
 .filter_controlgroup {
 	margin-bottom: 15px;
-}
-.filter_controlgroup input, .filter_controlgroup select {
-	float: right;
-	width: 50%;
+	@include clearfix;
+	width: 100%;
 }
 
+.filter_controlgroup input, .filter_controlgroup select {
+	float: left;
+	width: 23%;
+	margin-left: 12em;
+	font-size: 13px;
+	@media screen and(max-width: 980px){
+		margin-left: 0;
+	}
+}
+
+.filter_select label{
+	float: right;
+}
+
+label{
+	color: $c-white;
+	font-size: 13px;
+
+}
+
+.filter_select{
+	margin-right: 1em;
+	font-size: 13px;
+}
+
+#filter_button_filter_module_1{
+   	background: rgba($c-lightgreen, 0.2);
+	width: 100%;
+	margin-top: -8px;
+	height: 3em;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	&:hover{
+	// background: $c-red;
+   	background: rgba($c-red, 0.5);
+	}
+}
+
+#filter_button_filter_module_2{
+   	background: rgba($c-lightgreen, 0.2);
+	width: 100%;
+	margin-top: -8px;
+	height: 3em;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+	&:hover{
+	// background: $c-red;
+   	background: rgba($c-red, 0.5);
+	}
+}
 

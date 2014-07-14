@@ -30,19 +30,23 @@ Template Name: Homepage
 
 <div class="u-gridContainer">
 	<div class="u-gridRow">
-		<div class="Box Box-tires">
-			<p class="Box-title">BANDEN ZOEKEN</p>
-			<div class="Box-content">
-				<?php if ( dynamic_sidebar('Banden') ) : else : endif; ?>	
-			</div>
-	    </div>
+		<!-- <p class="Box-title">BANDEN ZOEKEN</p> -->
+			<div class="Box Box-tires">
+				<p class="Box-title">BANDEN ZOEKEN</p>
+				<div class="Box-content">
+					<?php if ( dynamic_sidebar('Banden') ) : else : endif; ?>	
+				</div>
+		    </div>
 
-	    <div class="Box Box-rims">
-			<p class="Box-title">VELGEN ZOEKEN</p>
-			<div class="Box-content">
-				<?php if ( dynamic_sidebar('Velgen') ) : else : endif; ?>	
-			</div>
-	    </div>
+	<div class="Box-wrap">
+		<!-- <p class="Box-title">VELGEN ZOEKEN</p> -->
+		    <div class="Box Box-rims">
+				<p class="Box-title">VELGEN ZOEKEN</p>
+				<div class="Box-content">
+					<?php if ( dynamic_sidebar('Velgen') ) : else : endif; ?>	
+				</div>
+		    </div>
+		</div>
 	</div>
 </div>
 
@@ -54,11 +58,11 @@ Template Name: Homepage
 				<div id="filter_search_results"></div>
 			</div>
 	    </div>
-	    <p>Alle prijzen zijn per stuk, inclusief BTW, montage en balanceren.</p>
-	    	<p>Tevens is het mogelijk uw banden met stikstof te vullen tegen een meerprijs van €2.50 per band.</p>
-	    <div class="Tires-img">
-   			 <a href="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tires.png" /></a>
-		</div>
+		    <p>Alle prijzen zijn per stuk, inclusief BTW, montage en balanceren.</p>
+		    	<p>Tevens is het mogelijk uw banden met stikstof te vullen tegen een meerprijs van €2.50 per band.</p>
+		    <div class="Tires-img">
+	   			 <a href="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tires.png" /></a>
+			</div>
 	</div>
 </div>
 

@@ -4,9 +4,18 @@
 
 .Search-results{
 	@include span-columns(12);
+	border: 2px solid $c-white;
     background-color: $c-darkgray;
-    height: 650px; 
+    // height: 650px; 
     margin-top: 2em;
+      background: -moz-linear-gradient(top,  #001f20 0%, #003030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#001f20), color-stop(100%,#003030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #001f20 0%,#003030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #001f20 0%,#003030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #001f20 0%,#003030 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #001f20 0%,#003030 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f20', endColorstr='#003030',GradientType=0 ); /* IE6-9 */
+    color: $c-white !important;
 	
     @media screen and(max-width: 980px){
     	@include span-columns(12);
@@ -15,6 +24,10 @@
 
 .filter_search_results {
 	width: 100%;
+}
+
+.filter_search_results a{
+	color: $c-white;
 }
 .filter_search_results th {
 	text-align: left; 
@@ -25,14 +38,31 @@
 }
 .filter_search_results tr:nth-of-type(even) {
 	background-color: #000;
+
+}
+.filter_search_results > tbody:nth-child(1) > tr:nth-child(1){
+    @media screen and(max-width: 980px){
+    	display: none;
+    }
 }
 
 .filter_search_results tr:nth-of-type(odd) {
 	background-color: #333;
+	// @media screen and(max-width: 980px){
+	// 	margin-top: 1em;
+	// }
+}
+.filter_search_results > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1){
+    @media screen and(max-width: 980px){
+    display: none;
+	}
 }
 
 .filter_search_results img {
 	width: 25px;
+    @media screen and(max-width: 980px){
+    	display: none;
+    }
 }
 
 .filter_search_results input {
@@ -40,8 +70,82 @@
 	background-color: #000;
 	border: 2px solid #222;
 	text-align: center;
+	@media screen and(max-width: 980px){
+	margin-top: 1em;
+	}
 }
 
-.filter_search_wrap {
-	padding: 20px;
+// .filter_search_wrap {
+// 	padding: 20px;
+// }
+
+//Zoekresultaten h3
+#filter_search_results > h3{
+	display: none;
 }
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.filter_search_results thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.filter_search_results tr { 
+		border: 1px solid #ccc; 
+		margin-top: 1em;
+	}
+	
+	.filter_search_results td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	.filter_search_results td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+	.filter_search_results > tbody:nth-child(1) > tr:nth-child(2){
+		margin-top: 0;
+	}
+	
+	.filter_search_results > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1){
+		display: none;
+	}
+
+
+
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: ""; }
+	td:nth-of-type(2):before { content: "Name"; }
+	td:nth-of-type(3):before { content: "Merk"; }
+	td:nth-of-type(4):before { content: "Prijs"; }
+	td:nth-of-type(5):before { content: "#"; }
+	td:nth-of-type(6):before { content: ""; }
+}
+
+
+
+
