@@ -22,7 +22,7 @@ Template Name: Homepage
 
 				</div>
 					<div class="Shoppingcart u-gridCol4">
-		    		<!-- <img src="http://placehold.it/950x500/2079B0/2079B0"> -->
+						<div id="shoppingcart"></div>
 	    		</div>
 			</div>
 		</div>	
@@ -30,14 +30,18 @@ Template Name: Homepage
 
 <div class="u-gridContainer">
 	<div class="u-gridRow">
-		<div class="Box-tires">
+		<div class="Box Box-tires">
 			<p class="Box-title">BANDEN ZOEKEN</p>
-	    	<!-- <img src="http://placehold.it/950x500/2079B0/2079B0"> -->
+			<div class="Box-content">
+				<?php if ( dynamic_sidebar('Banden') ) : else : endif; ?>	
+			</div>
 	    </div>
 
-	    <div class="Box-rims">
+	    <div class="Box Box-rims">
 			<p class="Box-title">VELGEN ZOEKEN</p>
-	    	<!-- <img src="http://placehold.it/950x500/2079B0/2079B0"> -->
+			<div class="Box-content">
+				<?php if ( dynamic_sidebar('Velgen') ) : else : endif; ?>	
+			</div>
 	    </div>
 	</div>
 </div>
@@ -46,8 +50,9 @@ Template Name: Homepage
 	<div class="u-gridRow">
 		<div class="Search-results">
 			<p class="Box-title">ZOEKRESULTATEN</p>
-	    	<!-- <img src="http://placehold.it/950x500/2079B0/2079B0"> -->
-	    	
+			<div class="filter_search_wrap">
+				<div id="filter_search_results"></div>
+			</div>
 	    </div>
 	    <p>Alle prijzen zijn per stuk, inclusief BTW, montage en balanceren.</p>
 	    	<p>Tevens is het mogelijk uw banden met stikstof te vullen tegen een meerprijs van €2.50 per band.</p>

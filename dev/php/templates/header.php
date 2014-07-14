@@ -32,13 +32,12 @@
 
     <!-- build:remove:compressed -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
-    <!-- /build -->
+     
 
     <!-- Wordpress head function -->
-    <?php wp_head(); ?>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<?php wp_head(); ?>
 
-  </head>
+  </head> 
   <body <?php body_class(); ?> >
 <div class="Header-wrap">
     <!-- <div class="Header-gradient"> -->
@@ -61,6 +60,6 @@
                     </svg>
                 </a>
              <?php include 'includes/navigation.php'; ?>
-        </div>
+		</div>
     </div>
 </div>

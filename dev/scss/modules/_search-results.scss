@@ -3,7 +3,7 @@
 }
 
 .Search-results{
-	   @include span-columns(12);
+	@include span-columns(12);
     background-color: $c-darkgray;
     height: 650px; 
     margin-top: 2em;
@@ -11,4 +11,37 @@
     @media screen and(max-width: 980px){
     	@include span-columns(12);
 	}
+}
+
+.filter_search_results {
+	width: 100%;
+}
+.filter_search_results th {
+	text-align: left; 
+	padding: 5px;
+}
+.filter_search_results td {
+	padding: 5px;
+}
+.filter_search_results tr:nth-of-type(even) {
+	background-color: #000;
+}
+
+.filter_search_results tr:nth-of-type(odd) {
+	background-color: #333;
+}
+
+.filter_search_results img {
+	width: 25px;
+}
+
+.filter_search_results input {
+	width: 25px;
+	background-color: #000;
+	border: 2px solid #222;
+	text-align: center;
+}
+
+.filter_search_wrap {
+	padding: 20px;
 }

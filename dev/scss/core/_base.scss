@@ -85,6 +85,13 @@ small {
   font-size: 75%;
 }
 
+input, select {
+	background-color: #333333;
+	color: $c-white;
+	border: 1px solid #222;
+	padding: 3px;
+	border-radius: 4px;
+}
 // -------------------------------------
 // Inline Block Content
 // -------------------------------------
@@ -92,3 +99,5 @@ small {
 img {
   max-width: 100%;
 }
+
+
