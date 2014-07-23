@@ -4,7 +4,7 @@
 // -> Main site header
 //
 // *************************************
-
+//
 .Header {
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
@@ -40,7 +40,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001f20', end
 }
 
 // ----- Contact bar ----- //
-
+ 
 .Header-logo {
   @extend .u-gridRow;
   padding-bottom : $l-whiteSpace;
