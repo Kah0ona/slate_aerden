@@ -2,14 +2,9 @@
 		<div class="u-gridContainer">
 			<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
 			<div class="Footer-inner u-gridRow">
-       <!--  <aside class="u-gridCol4">
-      <img src="/files/2014/06/zeisterlogowit.png"></img>
-        </aside> -->
-      <aside class="u-gridCol12">
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 			</div>
 			<?php endif; ?>
-    </aside>
 		</div>
 
 	</div>
@@ -17,7 +12,7 @@
       <div class="u-gridRow">
        <p class="Footer-text">&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website en SEO door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden.nl</a> - <a href="/algemene-voorwaarden/">Algemene voorwaarden</a> - <a href="/privacy-beleid">Privacy beleid</a></p>
       </div>
-</div>
+  </div>
 
 
 	<!-- Copyright info -->

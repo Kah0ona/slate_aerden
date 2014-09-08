@@ -61,6 +61,7 @@
 .Box-title{
 	text-align: center;  
 	font-weight: 600;
+	padding: 5px;
 	// background-color: $c-lightgreen;
 	margin-top: 0;
    	background: rgba($c-lightgreen, 0.2);
@@ -116,6 +117,9 @@ label{
 	// background: $c-red;
    	background: rgba($c-red, 0.5);
 	}
+
+
+
 }
 
 #filter_button_filter_module_2{
@@ -133,3 +137,12 @@ label{
 	}
 }
 
+.Box-tires, .Box-rims{
+	position: relative;
+}
+.filter_button {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	left: 0px;
+}

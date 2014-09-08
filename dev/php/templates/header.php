@@ -32,25 +32,25 @@
 
     <!-- build:remove:compressed -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <!-- /build -->
      
 
     <!-- Wordpress head function -->
 	<?php wp_head(); ?>
 
   </head> 
-  <body <?php body_class(); ?> >
+<body <?php body_class(); ?> >
 <div class="Header-wrap">
     <!-- <div class="Header-gradient"> -->
         <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.png" />-->
         <div class="u-gridContainer">
           <div class="Logo-img">
             <!-- <a href="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-aerden.png" /></a> -->
-            </div>
+           </div>
         </div>
     <!-- </div> -->
 </div>
 
-</div>
 <div class="Menu-wrap">
     <div class="u-gridContainer">   
         <div class="u-gridRow">

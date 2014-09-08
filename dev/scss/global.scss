@@ -17,17 +17,17 @@
 
 // ----- Bourbon Neat ----- //
 @import "../../lib/scss/neat/neat";
-
+ 
 // ----- Native wordpress styles ----- //
 @import "../../lib/scss/wp/wp";
-
+ 
 // ----- Override ----- //
 @import "../../lib/scss/libs-override";
-
+    
 // -------------------------------------
 // Core
 // -------------------------------------
-
+     
 // ----- Helpers ----- //
 @import "core/helpers";
 
@@ -80,6 +80,8 @@
 
 @import "modules/form";
 
+@import "modules/product";
+
 // -------------------------------------
 // Inbox
 // -------------------------------------
@@ -114,4 +116,8 @@ label label-info xtooltip{
 
 td.product-category{
 	width: 107%;
+}
+
+.pull-right {
+    float: none !important;
 }
