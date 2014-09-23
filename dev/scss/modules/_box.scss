@@ -104,7 +104,7 @@ label{
 	font-size: 13px;
 }
 
-#filter_button_filter_module_1{
+.filter_button{
    	background: rgba($c-lightgreen, 0.2);
 	width: 100%;
 	margin-top: -8px;
@@ -121,22 +121,7 @@ label{
 
 
 }
-
-#filter_button_filter_module_2{
-   	background: rgba($c-lightgreen, 0.2);
-	width: 100%;
-	margin-top: -8px;
-	height: 3em;
-	-webkit-duration: .3s;
-	-moz-duration: .3s;
-	-o-duration: .3s;
-	transition-duration: .3s;
-	&:hover{
-	// background: $c-red;
-   	background: rgba($c-red, 0.5);
-	}
-}
-
+  
 .Box-tires, .Box-rims{
 	position: relative;
 }
