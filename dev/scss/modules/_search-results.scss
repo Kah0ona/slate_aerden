@@ -22,6 +22,16 @@
 	}
 }
 
+.steekmaat_credits {
+	color: #444;
+	position: absolute;
+	bottom: 50px;
+	right: 5px;
+	a {
+		color: #555;
+	}
+}
+
 .filter_search_results {
 	width: 100%;
 
@@ -147,6 +157,14 @@ only screen and (max-width: 760px),
 	td:nth-of-type(6):before { content: ""; }
 }
 
-
+ul.filter_search_results_pagination li {
+	display: block;
+	text-align: center;
+	border-right: 2px solid black;
+	padding: 0px 10px;
+	a {
+		display: inline-block;
+	}
+}
 
 

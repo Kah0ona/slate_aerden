@@ -33,7 +33,7 @@ Template Name: Homepage
 		<!-- <p class="Box-title">BANDEN ZOEKEN</p> -->
 			<div class="Box Box-tires">
 				<p class="Box-title">BANDEN ZOEKEN</p>
-				<div class="Box-content">
+				<div class="Box-content"> 
 						<?php if ( dynamic_sidebar('Banden') ) : else : endif; ?>	
 					</div>
 				</div>
@@ -48,7 +48,7 @@ Template Name: Homepage
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> 
 
 	<div class="u-gridContainer">
 		<div class="u-gridRow">
@@ -58,8 +58,9 @@ Template Name: Homepage
 					<div id="filter_search_results"></div>
 				</div>
 			</div>
-				<p>Alle prijzen zijn per stuk, inclusief BTW, montage en balanceren.</p>
-					<p>Tevens is het mogelijk uw banden met stikstof te vullen tegen een meerprijs van €2.50 per band.</p>
+				<p>Alle <strong><u>banden</u></strong>prijzen zijn per stuk, inclusief BTW, montage en balanceren.</p>
+				<p>Alle <strong><u>velgen</u></strong>prijzen zijn per stuk, inclusief BTW, <strong>exclusief</strong> montagekosten.</p>
+				<p>Tevens is het mogelijk uw banden met stikstof te vullen tegen een meerprijs van €2.50 per band.</p>
 				<div class="Tires-img">
 					 <a href="home"><img alt="tires" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tires.png" /></a>
 				</div>

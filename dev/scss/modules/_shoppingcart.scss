@@ -64,6 +64,12 @@
 	margin-top: 1em;
 }
 
+#shopping-cart-dropdown {
+	.product-row {
+		font-size: 9pt;
+	}
+}
+
 
 // dit overrulet de plugin
 
@@ -83,3 +89,21 @@
 .emptycart {
 	margin-left: 0px !important;
 }
+
+input.span4, input.span1, input.span2, input.span3, select.span6 {
+
+	float: none !important;
+}
+
+.schedulerMessage {
+	margin-top: 10px;
+
+	&.alert-error {
+		background-color: #d9534f;
+	}
+}
+
+strong {
+	font-weight: bold; 
+}
+

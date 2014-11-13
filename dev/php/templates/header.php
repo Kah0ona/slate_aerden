@@ -9,7 +9,7 @@
 
     <!-- IE: render in highest mode available -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- Title -->
     <title><?php wp_title( '|', true, 'right' ); ?><?php echo get_bloginfo( 'name' ); ?></title>
 
@@ -47,6 +47,9 @@
 
 			return width+"/"+ar+" R"+inch+" "+res+speed;
 		}
+
+
+
 		var myCustomRenderer_1 = function(jsonObj){
 			var target = $(this.settings.target_elt);
 
@@ -59,7 +62,8 @@
 			if(currentHeader != null && currentHeader.children('th').size() != 0){
 				str += "<tr>"+currentHeader.html()+"</tr>";
 			} else {
-				str += "<tr><th></th><th data-sortkey='productName' data-title='Naam'  data-sortable='true'>Naam</th><th>Merk</th>";
+				str += "<tr><th></th><th data-sortkey='brand' data-title='Merk'  data-sortable='true'>Merk</th>";
+				str += "<th data-sortkey='productName' data-title='Naam'  data-sortable='true'>Naam</th>";
 				str += "<th>Bandenmaat</th>";
 				str += "<th>Type</th>";
 				str += "<th>Energie</th>";
@@ -71,7 +75,7 @@
 				var item = jsonObj[i];
 				this.logger(item);
 				str += "<tr>";
-				str += " <td><img src='"+this.settings.base_url+"/uploads/Product/"+item.imageDish+"' /></td>";
+				str += " <td></td>";
 				str += " <td><a href='/products/"+item.Product_id+"'>"+this.getEmptyStringIfNull(item.brand)+"</a></td>";
 				str += " <td><a href='/products/"+item.Product_id+"'>"+item.productName+"</a></td>";
 				var j = 0;
@@ -90,6 +94,12 @@
 				str += "</tr>";
 			}
 			str += "</table>";
+ 
+			var total = 0;
+			if(jsonObj.length > 0){
+				total = parseInt(jsonObj[0].productOrder);
+			}
+			str += this.renderPagination(total, this.current_page);
 			return str;
 		}
 
