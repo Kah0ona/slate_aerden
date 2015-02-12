@@ -28,6 +28,7 @@
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prepend-svg.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/checkout.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/lightbox.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scrollWhenSearch.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
   <!-- /build -->
 
