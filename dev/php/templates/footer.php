@@ -23,6 +23,7 @@
   <!-- /build -->
   <!-- build:remove:compressed -->
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/landingpage-select.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/nav-collapse.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/nav-dropdown.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prepend-svg.js"></script>

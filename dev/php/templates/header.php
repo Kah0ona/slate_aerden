@@ -35,6 +35,20 @@
     <!-- /build -->
      
 <script>
+		var beforeInsertingProductToCartHook = function(product, update){
+			if(product.color == 'Velg' && !update){
+				var carElt = $('#rim_filter_form select[name="car"]');
+				
+				var cookie = $.cookie("rim_filter_form_settings");
+				if(cookie != null) {
+					var obj = JSON.parse(cookie);
+					product.title += " ("+obj['car']+' '+obj['model']+")";
+				}
+			}
+			return product;
+		}
+
+
 		var buildBandenMaat = function(item){
 			var props = item.ProductProperty;
 			var width = props[0].propertyValue;
