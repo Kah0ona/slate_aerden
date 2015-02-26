@@ -32,3 +32,36 @@
 	}
 
 }
+
+.product {
+	background-color: $c-darkgreen;
+	padding: 20px;
+	height: 300px;
+	margin-bottom: 20px;
+	position: relative;
+	.product-image {
+		height: 190px;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	.product-title {
+		position: absolute;
+		left: 10px; 
+		bottom: 30px;
+	}
+	.product-price {
+		position: absolute;
+		right: 10px;
+		bottom: 30px;
+	}
+	.product-detail-button {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	
+	}
+	
+}

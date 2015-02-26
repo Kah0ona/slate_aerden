@@ -13,4 +13,17 @@ opgelost
 ·        Bij de bevestiging van de bestelling, zie hieronder wordt er geen auto weer gegeven, zo kunnen wij dus niet controleren of de klant de juiste velg voor zijn auto heeft besteld.
 opgelost
  
+
+
+
+
+
+
+
+
+
+
+
  
+
+        Stalen velgen, daar gaat het mis, als voorbeeld: als ik zoek op Skoda krijg ik types van Mercedes te zien zoals A klasse etc., deze hebben wel dezelfde steek als de gekozen Skoda maar de ET en de naaf is anders, bij stalen velgen moet dit exact zijn omdat je niet met ringen kan werken. Als je bv zou zoeken op Skoda Octavia II Scout dan moet er in de zoekresultaten alleen komen te staan: het velgnummer (alcarnummer) 9535. Nog een voorbeeld: als ik zou zoeken op VW Golf VI Cabrio dan moet er in het zoekresultaat komen te staan; het velgnummer 9165 (=15inch.) en 9535 (=16 inch.). deze zijn beide mogelijk.

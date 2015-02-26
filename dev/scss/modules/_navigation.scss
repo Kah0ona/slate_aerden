@@ -16,6 +16,10 @@
 
 }
 
+
+
+
+
 // -------------------------------------
 // Module specific variables
 // -------------------------------------
@@ -30,24 +34,26 @@
 // States
 // -------------------------------------
 
-.Navigation-listItem.is-active {
-  background-color: $c-red;
-  .Navigation-link{
-    color: $c-white;
-  }
+.Navigation-listItem.is-active,
+.Navigation-listItem:nth-of-type(2){
+	background-color: $c-red;
+	.Navigation-link{
+		color: $c-white;
+	}
 
-   @media screen and(max-width: 980px){
-    display: block;
-    padding: 0.5em;
+    @media screen and(max-width: 980px){
+		display: block;
+		padding: 0.5em;
 
-    &:hover{
-   background: transparent;
-    text-decoration: underline;
+		&:hover{
+			background: transparent;
+			text-decoration: underline;
 
-   }
-    
-  }
+		}
+
+    }
 }
+
 
 // -------------------------------------
 // Context
